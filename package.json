@@ -1,0 +1,20 @@
+{
+  "name": "playwright-bugbank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@playwright/test": "^1.32.1",
+    "@shelex/cypress-allure-plugin": "^2.37.0"
+  },
+  "scripts": {
+    "test": "playwright test --workers=1",
+    "ui:mode": "playwright test --ui",
+    "debug": "playwright test --debug",
+    "chrome": "playwright test --headed --project='chromium'",
+    "firefox": "playwright test --headed --project='firefox'",
+    "webkit": "playwright test --headed --project='webkit'",
+    "report": "playwright show-report"
+  }
+}
